@@ -30,7 +30,9 @@ app.post("/payment/create", async (req, res) => {
 	}
 });
 
-exports.api = onRequest(app);
+// exports.api = onRequest(app);
 
-// app.listen(5050,)
-// pi_3QSHIQGvuVqeJBHi03EqHdbQ_secret_5kOWER4WgIeNHrNCH57PaReZ0;
+const PORT = 5050;
+app.listen(PORT, () => {
+	console.log(`Server is running on port ${PORT}`);
+});
